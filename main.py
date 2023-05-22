@@ -10,7 +10,7 @@ cap.set(4,720)
 
 detector =htm.handDetector()
 drawingColor=(0,0,255)
-imgCanvas=np.zeros((720,1280,3),np.uint8)# to create canvas
+imgCanvas=np.zeros((720,1280,3),np.uint8)
 erasersize=50
 brushsize=20
 
@@ -24,7 +24,7 @@ while True:
     image=cv2.flip(image,1)
 
 
-    cv2.rectangle(image,(0,0),(1280,110),(0,0,0),cv2.FILLED) #background box
+    cv2.rectangle(image,(0,0),(1280,110),(0,0,0),cv2.FILLED) 
 
     cv2.circle(image,(90,60),50,(0,0,255),cv2.FILLED) #red
     cv2.circle(image,(210,60),50,(0,255,0),cv2.FILLED) #green
